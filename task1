@@ -1,0 +1,31 @@
+using System;
+
+namespace ooplesson3task1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите строку:");
+
+            string str = Console.ReadLine();
+
+            str = Reverse(str);
+
+            Console.WriteLine(str);
+
+
+        }
+
+        static string Reverse(string str)
+        {
+
+            char[] reverse = str.ToCharArray();
+
+            Array.Reverse(reverse);
+
+            return new string(reverse);
+
+        }
+    }
+}
